@@ -1,11 +1,11 @@
 
 import './App.css';
-import Hooka from './components/Hooka'
+import Hoek from './components/Hoek'
 
 function App() {
   return (
     <div className="App">
-      <Hooka />
+      <Hoek />
       <div>Derek</div>
     </div>
   );
