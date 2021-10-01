@@ -1,12 +1,13 @@
 
 import './App.css';
-import Hoek from './components/Hoek'
+import Ani from './components/Ani'
 
 function App() {
   return (
     <div className="App">
-      <Hoek />
-      <div>Derek</div>
+      {/* <Hoek /> */}
+      <Ani />
+      {/* <div>Derek</div> */}
     </div>
   );
 }

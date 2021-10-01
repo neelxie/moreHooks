@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Hoek() {
-  const [name, setName] = React.useState({ firstName: "", lastName: "" });
+  const [name, setName] = useState({ firstName: "", lastName: "" });
   return (
     <form>
       <input
