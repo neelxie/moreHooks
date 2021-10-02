@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react'
 
 function HookCount() {
     const [count, setCount] = useState(0)
+    const [name, setName] = useState('') 
     useEffect(() => {
         document.title = `You clicked ${count} times`
     })
