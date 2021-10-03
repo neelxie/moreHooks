@@ -1,8 +1,9 @@
 
 import './App.css';
-import Ani from './components/Ani'
-import HookCount from './components/HookCount';
-import IntervalTimer from './components/IntervalTimer';
+import DataFetching from './components/DataFetching';
+// import Ani from './components/Ani'
+// import HookCount from './components/HookCount';
+// import IntervalTimer from './components/IntervalTimer';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       {/* <Hoek /> */}
       {/* <Ani /> */}
-      <IntervalTimer />
+      {/* <IntervalTimer /> */}
+      <DataFetching />
       {/* <HookCount /> */}
       {/* <div>Derek</div> */}
     </div>
