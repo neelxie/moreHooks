@@ -1,15 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 
 function IntervalTimer() {
-    const [time, setTime] = useState(0);
-    const tick = () => {
-        setTime(time + 1);
+  const [count, setCount] = useState(0);
+  const tick = () => {
+    setCount(preCount => preCount + 1);
+  };
+  useEffect(() => {
+    const interval = setInterval(tick, 1000);
+    return () => {
+      clearInterval(interval)
     }
-    useEffect(() => {
-        const interval = setInterval(tick, 1000);
-        return () => clearInterval(interval);
-    }, )
-  return <div>{time}</div>;
+  }, [count])
+  return <div>{count}</div>;
 }
 
 export default IntervalTimer;
