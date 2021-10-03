@@ -10,7 +10,7 @@ function IntervalTimer() {
     return () => {
       clearInterval(interval)
     }
-  }, [count])
+  }, [])
   return <div>{count}</div>;
 }
 
