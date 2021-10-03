@@ -5,7 +5,7 @@ function DataFetching() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts")
-      .then(res => { console.log(res.data)} )
+      .then(res => { setPosts(res.data)} )
       .catch(err => { console.log(err) })
   })
   return (
