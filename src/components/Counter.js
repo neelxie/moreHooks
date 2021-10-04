@@ -1,12 +1,14 @@
 import React, { useReducer } from "react";
 
-const initialState = 0
+const initialState = {
+  firstCounter: 0 
+}
 const reducer = (state, action) => {
-  switch (action) {
+  switch (action.type) {
     case "increment":
-      return state + 1
+      return { firstCounter: state.firstCounter + 1 }
     case "decrement":
-      return state - 1
+      return { firstCounter: state.firstCounter - 1 }
     case "reset":
       return initialState
     default:
