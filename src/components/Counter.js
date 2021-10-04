@@ -20,11 +20,17 @@ function Counter() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div>
-      <div>Count - {count}</div>
+      <div>Count - {count.firstCounter}</div>
       <button onClick={() => dispatch({ type: "increment", value: 1 })}>
         Increment
       </button>
       <button onClick={() => dispatch({ type: "decrement", value: 1 })}>
+        Decrement
+      </button>
+      <button onClick={() => dispatch({ type: "increment", value: 5 })}>
+        Increment
+      </button>
+      <button onClick={() => dispatch({ type: "decrement", value: 5 })}>
         Decrement
       </button>
       <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
