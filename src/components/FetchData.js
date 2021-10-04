@@ -2,13 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function FetchData() {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [post, setPost] = useState([]);
-  const [id, setId] = useState(1);
-  const [idFromInput, setIdFromInput] = useState(1);
 
-  const handleClick = () => {
-    setIdFromInput(id);
-  }
   useEffect(() => {
     axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromInput}`)
       .then(res => { setPost(res.data)} )
