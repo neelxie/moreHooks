@@ -8,7 +8,7 @@ function FetchData() {
 
   useEffect(() => {
     axios
-      .get(`https://jsonplaceholder.typicode.com/posts/1}`)
+      .get(`https://jsonplaceholder.typicode.com/posts/1`)
       .then((res) => {
         setLoading(false)
         setPost(res.data);
