@@ -2,31 +2,28 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function FetchData() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [post, setPost] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`https://jsonplaceholder.typicode.com/posts/${idFromInput}`)
+      .get(`https://jsonplaceholder.typicode.com/posts/1}`)
       .then((res) => {
-        setLoading(true)
+        setLoading(false)
         setPost(res.data);
+        setError('')
       })
       .catch((err) => {
-        console.log(err);
+        setLoading(false)
+        setPost({})
+        setError("Something went wrong")
       });
-  }, [idFromInput]);
+  }, []);
   return (
     <div>
-      <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
-      <button onClick={handleClick}>Fetch</button>
-      <div>{post.title}</div>
-      {/* <ul>
-        {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </ul> */}
+      {loading ? 'Loading' : post.title}
+      {error ? error : null}
     </div>
   );
 }
