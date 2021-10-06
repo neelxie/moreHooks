@@ -1,6 +1,7 @@
 
 import './App.css';
-import FocusInput from './components/FocusInput';
+// import FocusInput from './components/FocusInput';
+import HookTimer from './components/HookTimer';
 // import Counter from './components/Counter';
 // import DataFetching from './components/DataFetching';
 // import Ani from './components/Ani'
@@ -18,7 +19,8 @@ function App() {
       {/* <DataFetching /> */}
       {/* <Counter /> */}
       {/* <FetchData /> */}
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <HookTimer />
       {/* <HookCount /> */}
       {/* <div>Derek</div> */}
     </div>

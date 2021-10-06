@@ -12,7 +12,10 @@ function HookTimer() {
       clearInterval(intervalRef.current);
     };
   }, []);
-  return <div></div>;
+  return <div>
+    <h1>Hook Timer {timer}</h1>
+    <button onClick={() => clearInterval(intervalRef.current)}>Clear</button>
+  </div>;
 }
 
 export default HookTimer;
