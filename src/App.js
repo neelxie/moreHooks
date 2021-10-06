@@ -1,7 +1,8 @@
 
 import './App.css';
+import DocOne from './components/DocOne';
 // import FocusInput from './components/FocusInput';
-import HookTimer from './components/HookTimer';
+// import HookTimer from './components/HookTimer';
 // import Counter from './components/Counter';
 // import DataFetching from './components/DataFetching';
 // import Ani from './components/Ani'
@@ -20,7 +21,8 @@ function App() {
       {/* <Counter /> */}
       {/* <FetchData /> */}
       {/* <FocusInput /> */}
-      <HookTimer />
+      {/* <HookTimer /> */}
+      <DocOne />
       {/* <HookCount /> */}
       {/* <div>Derek</div> */}
     </div>
