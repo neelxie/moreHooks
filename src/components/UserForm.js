@@ -11,7 +11,17 @@ function UserForm() {
     alert(`Hello ${firstName} ${lastName}`);
   };
   return <div>
-    <form></form>
+    <form>
+      <div>
+        <label>First Name</label>
+        <input {...bindFirstName} />
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input {...bindLastName} />
+      </div>
+      <button onClick={handleSubmit}>Submit</button>
+    </form>
   </div>;
 }
 
