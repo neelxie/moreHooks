@@ -9,6 +9,8 @@ function useInput(initialValue) {
       setValue(event.target.value);
     },
   };
+
+  return [value, bind, reset];
 }
 
 export default useInput;
