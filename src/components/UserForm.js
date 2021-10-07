@@ -1,8 +1,10 @@
 import React from "react";
+import useInput from "./useInput";
 
 function UserForm() {
-  const [firstName, setFirstName] = React.useState("");
-  const [lastName, setLastName] = React.useState("");
+
+  const [firstName, bindFirstName, resetFirstName] = useInput('');
+  const [lastName, bindLastName, resetLastName] = useInput('');
 
   const handleSubmit = event => {
     event.preventDefault();
