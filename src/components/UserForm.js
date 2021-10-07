@@ -9,6 +9,8 @@ function UserForm() {
   const handleSubmit = event => {
     event.preventDefault();
     alert(`Hello ${firstName} ${lastName}`);
+    resetFirstName();
+    resetLastName();
   };
   return <div>
     <form>
