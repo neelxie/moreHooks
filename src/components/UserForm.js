@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
 function UserForm() {
-    return (
-        <div>
-            
-        </div>
-    )
+  const [firstName, setFirstName] = React.useState("");
+  const [lastName, setLastName] = React.useState("");
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    alert(`Hello ${firstName} ${lastName}`);
+  };
+  return <div>
+    <form></form>
+  </div>;
 }
 
-export default UserForm
+export default UserForm;
